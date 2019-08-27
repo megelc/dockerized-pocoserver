@@ -12,5 +12,4 @@ WORKDIR build
 RUN conan install ..
 RUN cmake .. -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release
 RUN cmake --build .
-RUN pwd && ls -la
 CMD ["bin/PocoServer"]
